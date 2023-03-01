@@ -3,9 +3,21 @@ package pt.tiagocabral.caixa;
 public class Main {
 
 	public static void main(String[] args) {
-		printTopOrBottom(4);
-		printLeftandRight(4,2);
-		printTopOrBottom(4);
+		createbox(4,4);
+		createbox(8,8);
+		createbox(5,5);
+	}
+	
+	public static void createbox(int width, int height) {
+		if(width < 4) {
+		   width = 4;
+		}
+		if(width < 4) {
+			width = 4;
+		}
+		printTopOrBottom(width);
+		printLeftandRight(width,height - 2);
+		printTopOrBottom(width);		
 	}
 	
 	public static void printTopOrBottom(int size){
