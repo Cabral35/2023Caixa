@@ -4,9 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		printTopOrBottom(4);
-		System.out.println("*    *");
-		System.out.println("*    *");
-		System.out.println("*    *");
+		printLeftandRight(4,2);
 		printTopOrBottom(4);
 	}
 	
@@ -16,5 +14,15 @@ public class Main {
 		}
 		System.out.println();
 	}
+	
+	  public static void printLeftandRight(int width, int height) {
+	        for (int i = 0; i < height; i++) {
+	            System.out.print("*");
+	            for (int j = 0; j < width -2; j++) {
+	                System.out.print(" ");
+	            }
+	            System.out.println("*");
+	        }
+	    }		 
 
 }
